@@ -61,6 +61,8 @@
 #include <Wire.h>
 #endif
 
+#define BUFFER_LENGTH 32
+
 #define PCA9685_MODE_INVRT          (byte)0x10  // Inverts polarity of channel output signal
 #define PCA9685_MODE_OUTPUT_ONACK   (byte)0x08  // Channel update happens upon ACK (post-set) rather than on STOP (endTransmission)
 #define PCA9685_MODE_OUTPUT_TPOLE   (byte)0x04  // Use a totem-pole (push-pull) style output, typical for boards using this chipset
